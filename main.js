@@ -31,7 +31,7 @@ async function starts() {
 	
 	await Fg.connect({timeoutMs: 30*1000});
   fs.writeFileSync('./whatsapp/sessions.json', JSON.stringify(Fg.base64EncodedAuthInfo(), null, '\t'));
-  link = 'https://chat.whatsapp.com/CDUqNRu5Kh5KY5uqQI0BKE'
+  link = 'https://chat.whatsapp.com/Br3NRaWSoto5ivuwkiPMel'
   Fg.query({ json:["action", "invite", `${link.replace('https://chat.whatsapp.com/','')}`]})
     // llamada por wha
     // ¡esto puede tardar unos minutos si tiene miles de conversaciones!!
